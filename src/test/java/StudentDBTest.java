@@ -1,3 +1,4 @@
+import exercises.StudentDB;
 import model.Student;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -43,7 +44,7 @@ public class StudentDBTest {
         String actual = studentDB.toString();
 
         // then
-        Assertions.assertEquals("StudentDB{students=[Student{id=1, name='André Schreck', birthday=null}, Student{id=2, name='Thomas Kittlaus', birthday=null}]}", actual);
+        Assertions.assertEquals("exercises.StudentDB{students=[Student{id=1, name='André Schreck', birthday=null}, Student{id=2, name='Thomas Kittlaus', birthday=null}]}", actual);
     }
 
     @Test

@@ -1,3 +1,5 @@
+package exercises;
+
 import model.Student;
 
 import java.util.Arrays;
@@ -17,7 +19,7 @@ public class StudentDB {
     @Override
     public String toString() {
 
-        return "StudentDB{" +
+        return "exercises.StudentDB{" +
                 "students=" + Arrays.toString(students) +
                 '}';
     }
@@ -27,13 +29,6 @@ public class StudentDB {
         double randomDouble = Math.random();
         return students[(int) (randomDouble * students.length)];
     }
-
-
-
-
-
-
-
 
     public void add(Student newStudent) {
         Student[] newStudents = Arrays.copyOf(students, students.length + 1);
@@ -53,6 +48,5 @@ public class StudentDB {
             }
         }
     }
-
 
 }
