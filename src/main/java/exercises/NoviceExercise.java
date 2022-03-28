@@ -1,7 +1,10 @@
+package exercises;
+
 import java.util.Scanner;
 
 public class NoviceExercise {
 
+    String test;
     /*
    
     Schreibe eine Methode die das Quadrat einer Zahl berechnet.
@@ -53,4 +56,18 @@ public class NoviceExercise {
         scanner.close();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        NoviceExercise that = (NoviceExercise) o;
+
+        return test != null ? test.equals(that.test) : that.test == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return test != null ? test.hashCode() : 0;
+    }
 }
