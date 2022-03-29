@@ -12,7 +12,7 @@ public class StudentDB {
         this.students = insertedStudents;
     }
 
-    public Student[] getAllStudents() {
+     public Student[] getAllStudents() {
         return students;
     }
 
@@ -23,6 +23,23 @@ public class StudentDB {
                 "students=" + Arrays.toString(students) +
                 '}';
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public Student getRandomStudent() {
 

@@ -3,13 +3,13 @@ package model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Student {
+public class Student extends Object{
 
     public static final int MIN_AGE = 17;
 
-    private int id;
-    private String name;
-    private LocalDate birthday;
+    protected int id;
+    protected String name;
+    protected LocalDate birthday;
 
     public Student(int id, String name) {
         this.id = id;
@@ -46,12 +46,12 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return id == student.id && Objects.equals(name, student.name) && Objects.equals(birthday, student.birthday);
+        return Objects.equals(name, student.name) && Objects.equals(birthday, student.birthday);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, birthday);
+        return Objects.hash(name, birthday);
     }
 
     @Override

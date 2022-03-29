@@ -1,24 +1,14 @@
-import exercises.StudentDB;
+import model.BiologyStudent;
 import model.Student;
 
 public class AppMain {
 
     public static void main(String[] args) {
 
-        StudentDB studentDB = new StudentDB(new Student[]{
-                new Student(1, "Anton"),
-                new Student(2, "Berta"),
-                new Student(2, "Caesar"),
-        });
+        BiologyStudent dora = new BiologyStudent(1, "Dora");
+        dora.setFavoriteAnimal("Hase");
 
-        System.out.println(studentDB.toString());
-
-        System.out.println("First Student: " + studentDB.getAllStudents()[0]);
-
-        System.out.println("Random Student: " +studentDB.getRandomStudent());
-
-        Student student1 = new Student(1, "Anton");
-        System.out.println(student1);
+        Student friedrich = new Student(2, "Friedrich");
 
     }
 }
