@@ -1,16 +1,13 @@
 package exercises;
 
 import model.Student;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class StudentDB {
 
     private List<Student> students;
 
-    public StudentDB(List insertedStudents) {
+    public StudentDB(List<Student> insertedStudents) {
         this.students = insertedStudents;
     }
 
